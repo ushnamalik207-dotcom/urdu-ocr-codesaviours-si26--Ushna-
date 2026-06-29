@@ -8,6 +8,7 @@ Optical Character Recognition (OCR) is a technology that converts text from scan
 Urdu OCR is highly challenging because the cursive Nastaliq script is written right-to-left and characters change shape based on their position. Letters frequently overlap and stack vertically, making it extremely difficult for computers to segment individual characters. Furthermore, tiny variations or misplacements of diacritic dots (nuqtas) completely alter word meanings, drastically increasing recognition errors compared to English.
 
 3. Two Real-World Situations for Urdu OCR:
+
 Digitalizing Historical Literature: Automatically converting old paper-based Urdu manuscripts, poetry, and newspaper archives into searchable digital libraries to preserve cultural heritage.
 
 Automating Government Data Entry: Speeding up public services by using computers to scan and read Urdu identity documents, court registries, and manual application forms directly into databases.
