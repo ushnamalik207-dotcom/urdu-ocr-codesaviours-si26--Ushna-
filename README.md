@@ -12,3 +12,8 @@ Urdu OCR is highly challenging because the cursive Nastaliq script is written ri
 Digitalizing Historical Literature: Automatically converting old paper-based Urdu manuscripts, poetry, and newspaper archives into searchable digital libraries to preserve cultural heritage.
 
 Automating Government Data Entry: Speeding up public services by using computers to scan and read Urdu identity documents, court registries, and manual application forms directly into databases.
+
+## Week 5: Streamlit Web Application Deployment
+- Developed and deployed an interactive Urdu OCR web app using Streamlit (`app.py`).
+- Added deployment configuration and dependencies (`requirements.txt`).
+- Enabled real-time Urdu text extraction from user-uploaded images.
