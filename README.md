@@ -1,18 +1,46 @@
-# urdu-ocr-codesaviours-si26--Ushna-
-Urdu OCR Project | Code Saviours SI-26 | [Ushna Alam]
+# Urdu OCR — Optical Character Recognition for Printed Urdu Text
 
-1. What is OCR?
-Optical Character Recognition (OCR) is a technology that converts text from scanned documents, PDFs, or images into editable and searchable data. It analyzes visual shapes and patterns to translate characters into machine-readable text. This process bridges the gap between physical documents and digital processing.
+An end-to-end Machine Learning pipeline and web application that extracts and digitizes printed Urdu text from document images using fine-tuned Vision Encoder-Decoder (TrOCR) architecture.
 
-2. Why is Urdu OCR harder than English OCR?
-Urdu OCR is highly challenging because the cursive Nastaliq script is written right-to-left and characters change shape based on their position. Letters frequently overlap and stack vertically, making it extremely difficult for computers to segment individual characters. Furthermore, tiny variations or misplacements of diacritic dots (nuqtas) completely alter word meanings, drastically increasing recognition errors compared to English.
+---
 
-3. Two Real-World Situations for Urdu OCR:
+### 📌 Why This Matters
+Urdu is a cursive, bidirectional script with complex font ligatures (Nastaliq & Naskh) and severe character overlap. Standard OCR engines (like default Tesseract) frequently struggle with Urdu script accuracy. This project addresses the low-resource barrier by providing an accurate, fine-tuned OCR solution to easily digitize printed Urdu literature, scanned books, and historical archives.
 
-Digitalizing Historical Literature: Automatically converting old paper-based Urdu manuscripts, poetry, and newspaper archives into searchable digital libraries to preserve cultural heritage.
+---
 
-Automating Government Data Entry: Speeding up public services by using computers to scan and read Urdu identity documents, court registries, and manual application forms directly into databases.
+### 🌐 Live Demo & Video Walkthrough
+* **Live Web App (Hugging Face Spaces):** [https://huggingface.co/spaces/Ushna-Alam219/Urdu-OCR-Demo](https://huggingface.co/spaces/Ushna-Alam219/Urdu-OCR-Demo)
+* **Loom Video Walkthrough:** [Add your Loom Video URL here after recording]
 
+---
+
+### ⚙️ How It Works
+1. **Image Preprocessing:** Scanned document images are loaded, converted to grayscale/RGB, resized, and normalized for standard tensor representation.
+2. **Feature Extraction & Encoding:** Vision Transformer (ViT) processes image patches into high-dimensional visual feature vectors.
+3. **Sequence Decoding (TrOCR):** An autoregressive language model decoder transforms visual embeddings into token sequences representing Urdu Unicode text.
+4. **Interactive Deployment:** Built with an intuitive web interface for real-time image upload and instant text inference.
+
+---
+
+### 📊 Results & Performance
+* **Model Backbone:** `microsoft/trocr-base-stage1` (Fine-tuned on curated Urdu text line datasets)
+* **Performance Metric:** Achieved robust Character Error Rate (CER) reduction across clear and noisy printed Urdu document samples.
+
+---
+
+### 🚀 How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/ushnamalik207-dotcom/urdu-ocr-codesaviours-si26--Ushna-.git](https://github.com/ushnamalik207-dotcom/urdu-ocr-codesaviours-si26--Ushna-.git)
+cd urdu-ocr-codesaviours-si26--Ushna-
+
+# 2. Install required dependencies
+pip install -r requirements.txt
+
+# 3. Run the application
+python app.py
 ## Week 5: Streamlit Web Application Deployment
 - Developed and deployed an interactive Urdu OCR web app using Streamlit (`app.py`).
 - Added deployment configuration and dependencies (`requirements.txt`).
