@@ -1,5 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
 streamlit
 easyocr
 pillow
-numpy
+numpy<2.0.0
 opencv-python-headless
